@@ -1,0 +1,1 @@
+select B.* from "test"."default"."autocustomer" B join "AwsDataCatalog"."vehicles"."findcustomertarget_650683404346" A ON cast(A.policyid as integer)=B.policyid where A.title_status = 'clean vehicle' and A.year = '2007' and A.state='california' and A.brand='chrysler'
